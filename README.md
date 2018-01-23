@@ -1,6 +1,6 @@
-# KVO Example
+# Key-Value Observing Example
 
-Project example with two targets: Swift 4 & 3.2
+Project example with two targets: Swift 4 and 3.2
 
 ## Review 
 * _ObserverManager_
