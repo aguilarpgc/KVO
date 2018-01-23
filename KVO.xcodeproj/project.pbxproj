@@ -17,6 +17,10 @@
 		5E22655B2017A242006E63A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2265512017A242006E63A1 /* Main.storyboard */; };
 		5E22655C2017A242006E63A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2265532017A242006E63A1 /* ViewController.swift */; };
 		5E22655D2017A242006E63A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2265532017A242006E63A1 /* ViewController.swift */; };
+		5E2265622017A340006E63A1 /* Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2265612017A340006E63A1 /* Observed.swift */; };
+		5E2265632017A340006E63A1 /* Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2265612017A340006E63A1 /* Observed.swift */; };
+		5E2265662017A370006E63A1 /* ObserverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2265642017A370006E63A1 /* ObserverManager.swift */; };
+		5E22656B2017A44E006E63A1 /* ObserverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E22656A2017A44E006E63A1 /* ObserverManager.swift */; };
 		5E7E37362017A0D40023F3F3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E793F272017A05200495830 /* Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +30,9 @@
 		5E2265502017A242006E63A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E2265522017A242006E63A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E2265532017A242006E63A1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E2265612017A340006E63A1 /* Observed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observed.swift; sourceTree = "<group>"; };
+		5E2265642017A370006E63A1 /* ObserverManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverManager.swift; sourceTree = "<group>"; };
+		5E22656A2017A44E006E63A1 /* ObserverManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverManager.swift; sourceTree = "<group>"; };
 		5E793EF520179FB300495830 /* Swift4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E793F0E2017A02400495830 /* Swift3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swift3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E793F1C2017A02400495830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +65,7 @@
 				5E22654F2017A242006E63A1 /* LaunchScreen.storyboard */,
 				5E2265512017A242006E63A1 /* Main.storyboard */,
 				5E2265532017A242006E63A1 /* ViewController.swift */,
+				5E2265612017A340006E63A1 /* Observed.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -85,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				5E793F1C2017A02400495830 /* Info.plist */,
+				5E2265642017A370006E63A1 /* ObserverManager.swift */,
 			);
 			path = Swift3;
 			sourceTree = "<group>";
@@ -93,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				5E793F272017A05200495830 /* Info.plist */,
+				5E22656A2017A44E006E63A1 /* ObserverManager.swift */,
 			);
 			path = Swift4;
 			sourceTree = "<group>";
@@ -205,6 +215,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E22655C2017A242006E63A1 /* ViewController.swift in Sources */,
+				5E22656B2017A44E006E63A1 /* ObserverManager.swift in Sources */,
+				5E2265622017A340006E63A1 /* Observed.swift in Sources */,
 				5E2265542017A242006E63A1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,7 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E22655D2017A242006E63A1 /* ViewController.swift in Sources */,
+				5E2265632017A340006E63A1 /* Observed.swift in Sources */,
 				5E2265552017A242006E63A1 /* AppDelegate.swift in Sources */,
+				5E2265662017A370006E63A1 /* ObserverManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +370,7 @@
 				DEVELOPMENT_TEAM = F53VDDUPLX;
 				INFOPLIST_FILE = "$(SRCROOT)/Swift4/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DSWIFT4";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aguilarpgc.kvo-swift4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -373,6 +388,7 @@
 				DEVELOPMENT_TEAM = F53VDDUPLX;
 				INFOPLIST_FILE = "$(SRCROOT)/Swift4/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DSWIFT4";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aguilarpgc.kvo-swift4";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -389,6 +405,7 @@
 				DEVELOPMENT_TEAM = F53VDDUPLX;
 				INFOPLIST_FILE = Swift3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DSWIFT3";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aguilarpgc.kvo-swift3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -406,6 +423,7 @@
 				DEVELOPMENT_TEAM = F53VDDUPLX;
 				INFOPLIST_FILE = Swift3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-DSWIFT3";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aguilarpgc.kvo-swift3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
